@@ -10,9 +10,11 @@ public class SceneMessageBean implements java.io.Serializable{
 	
 	private int sceneId;
 	
+
+	@Override
 	public String toString() {
-		return  "["+sceneMessageId + "," +messageContent + "," + memberId + ","
-				+ sceneId + "]";
+		return "SceneMessageBean [sceneMessageId=" + sceneMessageId + ", messageContent=" + messageContent
+				+ ", memberId=" + memberId + ", sceneId=" + sceneId + "]";
 	}
 
 	public int getSceneMessageId() {
@@ -36,7 +38,7 @@ public class SceneMessageBean implements java.io.Serializable{
 	}
 
 	public void setMemberId(int memberId) {
-		memberId = memberId;
+		this.memberId = memberId;
 	}
 
 	public int getSceneId() {
@@ -44,7 +46,8 @@ public class SceneMessageBean implements java.io.Serializable{
 	}
 
 	public void setSceneId(int sceneId) {
-		sceneId = sceneId;
+		this.sceneId = sceneId;
+
 	}
 
 	
