@@ -14,6 +14,7 @@ public class SceneMessageDAOjdbc {
 	//DB連線資訊
 	private static final String URL = "jdbc:sqlserver://localhost:1433;database=travel";
 	private static final String USERNAME = "sa";
+
 	private static final String PASSWORD = "passw0rd";	
 	//select
 	private static final String SELECT_ALL = "select * from scenemessage";
@@ -159,6 +160,7 @@ public class SceneMessageDAOjdbc {
 		smbean.setMessageContent("好玩");
 		smbean.setMemberId(5);
 		smbean.setSceneId(3);
+
 		
 //		
 		System.out.println(test.insert(smbean)); // 新增資料
