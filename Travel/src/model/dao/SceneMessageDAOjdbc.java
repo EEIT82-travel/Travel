@@ -15,7 +15,7 @@ public class SceneMessageDAOjdbc {
 	private static final String URL = "jdbc:sqlserver://localhost:1433;database=travel";
 	private static final String USERNAME = "sa";
 
-	private static final String PASSWORD = "passw0rd";	
+	private static final String PASSWORD = "sa123456";	
 	//select
 	private static final String SELECT_ALL = "select * from scenemessage";
 	private static final String SELECT_BY_SCENEID = "select * from scenemessage where sceneId = ?";	
